@@ -15,7 +15,7 @@
     <body> 
 
         <script type="text/javascript" src="iframeSizer.contentWindow.min.js"></script>
-        <script>window.parentIFrame.sendMessage("Timeout");</script>
+        <script>if ('parentIFrame' in window) alert("huhu"); window.parentIFrame.sendMessage("Timeout");</script>
 
         <h1>Timeout</h1>
     </body>
