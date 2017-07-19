@@ -12,11 +12,9 @@
             a { float:right; margin-left:10px;}
         </style>
     </head> 
-    <body> 
+    <body onload="if ('parentIFrame' in window) window.parentIFrame.sendMessage("Timeout");return false;"> 
 
         <script type="text/javascript" src="iframeSizer.contentWindow.min.js"></script>
-        <script>if ('parentIFrame' in window) alert("huhu"); window.parentIFrame.sendMessage("Timeout");</script>
-
         <h1>Timeout</h1>
     </body>
 </html>
