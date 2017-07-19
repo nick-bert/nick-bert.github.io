@@ -13,10 +13,10 @@
         </style>
     </head> 
     <body> 
-
-         <a href='#' onclick="if ('parentIFrame' in window) window.parentIFrame.sendMessage('{Timeout: true}');return false;">Timeout</a><br>
-         <a href='#' onclick="if ('parentIFrame' in window) window.parentIFrame.sendMessage('{Timeout: false}');return false;">No Timeout</a><br>
-         <a href='#' onclick="if ('parentIFrame' in window) window.parentIFrame.sendMessage('{Greeting: Hi}');return false;">Other Message</a><br>
+         
+         <a href='#' onclick="if ('parentIFrame' in window) { var to = {"Timeout": true}; window.parentIFrame.sendMessage(to); }return false;">Timeout</a><br>
+         <a href='#' onclick="if ('parentIFrame' in window) { var nto = {"Timeout": false}; window.parentIFrame.sendMessage(nto); } return false;">No Timeout</a><br>
+         <a href='#' onclick="if ('parentIFrame' in window) { var other = {"Blabla": "blub"}; window.parentIFrame.sendMessage(other); }return false;">Other Message</a><br>
         
         <script type="text/javascript" src="iframeSizer.contentWindow.min.js"></script>
         <h1>Timeout</h1>
