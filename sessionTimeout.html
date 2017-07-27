@@ -14,9 +14,9 @@
     </head> 
     <body> 
          
-         <a href='#' onclick="if ('parentIFrame' in window) { var message = { 'Timeout': true }; window.parentIFrame.sendMessage(message, ['https://handel.mobile.de']); } return false;">Timeout</a><br>
-         <a href='#' onclick="if ('parentIFrame' in window) { var message = { 'Timeout': false }; window.parentIFrame.sendMessage(message, ['https://handel.mobile.de']); } return false;">No Timeout</a><br>
-         <a href='#' onclick="if ('parentIFrame' in window) { var message = { 'dealerId': 4564 }; window.parentIFrame.sendMessage(message, ['https://handel.mobile.de']); } return false;">Other Message</a><br>
+         <a href='#' onclick="if ('parentIFrame' in window) { var message = { 'Timeout': true }; window.parentIFrame.sendMessage(message, ['https://handel.mobile.de', 'http://localhost:3000']); } return false;">Timeout</a><br>
+         <a href='#' onclick="if ('parentIFrame' in window) { var message = { 'Timeout': false }; window.parentIFrame.sendMessage(message, ['https://handel.mobile.de', 'http://localhost:3000']); } return false;">No Timeout</a><br>
+         <a href='#' onclick="if ('parentIFrame' in window) { var message = { 'dealerId': 4564 }; window.parentIFrame.sendMessage(message, ['https://handel.mobile.de', 'http://localhost:3000']); } return false;">Other Message</a><br>
         
         <script type="text/javascript" src="iframeSizer.contentWindow.min.js"></script>
         <h1>Timeout</h1>
